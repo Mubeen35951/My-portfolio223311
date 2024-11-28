@@ -1,0 +1,546 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Flex utility class */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hide scrollbar */
+.no-scroll {
+  overflow: hidden;
+}
+/* NavBar style */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+nav {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.navbar {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  width: 100vw;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white; /* Keep text color white */
+  text-decoration: none;
+  margin: 0 10px;
+ 
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+.animation{
+  transition-duration: .5s;
+}
+.animation:hover{
+
+padding: 11.5px;
+background-color: #ffffff41;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/* Home Page style */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;  /* Centering all text within the home section */
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;  /* Align image and text horizontally */
+  gap: 30px;  /* Reduced gap between image and text */
+  align-items: center;
+  justify-content: center; /* Ensure content is centered */
+  margin-top: 0px;
+}
+
+.intro img {
+  width: 350px;
+  height: 445px;
+  margin-bottom: 20px;
+  border: 3px solid #000000;
+  border-radius: 8px;  /* Rounded corners for the image */
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left; /* Align text to the left within the name section */
+}
+
+.intro h1 {
+  font-size: 2.5rem;  /* Larger font for the main name */
+  margin-bottom: 5px;
+  color: #222;  /* Darker color for better contrast */
+}
+
+.intro h2 {
+  font-size: 1.3rem;  /* Slightly larger size for the role */
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.para {
+  font-family: "Georgia", serif;  /* Elegant font for a poetic feel */
+  font-size: 1.3rem;  /* Adjust font size for readability */
+  line-height: 1.7;  /* Slightly reduced line height */
+  color: #333;  /* Subtle dark color for text */
+  text-align: center;  /* Center-align the text */
+  max-width: 750px;  /* Adjusted maximum width */
+  margin: 30px auto;  /* Center the paragraph with spacing around */
+  padding: 20px;  /* Add padding for breathing room */
+  background: linear-gradient(to right, #fefefe, #f0efefe7);  /* Soft gradient background */
+  border-left: 4px solid #00000087;  /* Artistic left border for a touch of elegance */
+  font-style: italic;  /* Make it italic for a poetic touch */
+  box-shadow: 0 10px 30px rgba(118, 30, 30, 0.1);  /* Subtle shadow for depth */
+  transition: all 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.para:hover {
+  color: #00000087;  /* Change text color on hover */
+  transform: translateY(-5px);  /* Slight upward movement on hover */
+}
+.creation{
+  margin-top: -30px;
+}
+@keyframes fadeInHome {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the Home section */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeInHome 1s ease-out; /* Apply the fade-in animation */
+}
+
+/* Optional: Adjust styles for hover effects and transitions for other elements */
+.intro img {
+  width: 350px;
+  height: 445px;
+  margin-bottom: 20px;
+  border: 3px solid #00000087;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.intro img:hover {
+  transform: scale(1.05); /* Slight scale effect on image hover */
+}
+
+.para:hover {
+  color: #000000d3;
+  transform: translateY(-5px); /* Slight upward movement on hover */
+}
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+
+}
+
+
+/* slider style */
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  margin: 10px;
+}
+
+/* Slide container */
+.slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Preview Button */
+.preview-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00000087;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.slide:hover .preview-button {
+  opacity: 1;
+}
+
+.preview-button:hover {
+  background-color: #000000;
+}
+@media (max-width: 768px) {
+  .preview-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .intro {
+    display: flex;
+  gap: 50px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .para{
+    align-content: center;
+  }
+  
+}
+
+/* contact style */
+.contact {
+  padding: 50px 20px;
+}
+
+.contact h1, .contact h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  background-color: #00000087;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: .5s;
+}
+
+form button:hover {
+  background-color: #000000;
+}
+/* Main About Section */
+.about {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.breadcrumb .home-link {
+  color: #00000087;
+  text-decoration: none;
+}
+
+.breadcrumb .home-link:hover {
+  text-decoration: underline;
+}
+
+/* Title Styling */
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #51515187;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-content a {
+  color: #00000087;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Info Section */
+.about {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.breadcrumb .home-link {
+  color: #00000087;
+  text-decoration: none;
+}
+
+.breadcrumb .home-link:hover {
+  text-decoration: underline;
+}
+/* Animation for the About section */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out; /* Apply the fade-in animation */
+}
+
+/* Optional: Add a delay or change animation speed */
+.about.delayed {
+  animation: fadeIn 1s ease-out;
+}
+/* Title Styling */
+.contact-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #0000005d;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-title2 {
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #00000087;
+}
+
+/* New styles for success and error messages */
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.message.success {
+  background-color: #2e4f35; /* Green background for success */
+  color: white;
+}
+
+.message.error {
+  background-color: #583236; /* Red background for error */
+  color: white;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out; /* Apply the fade-in animation */
+}
+
+/* Optional: Add a delay or change animation speed */
+.contact.delayed {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 20px 15px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}
